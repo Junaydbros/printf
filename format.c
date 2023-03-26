@@ -14,14 +14,14 @@ int _printf(const char *format, ...)
 	/*declare list*/
 	va_list args;
 
-	while (format[i])
+	if (format == NULL)
+		return (-1);
+	while (format && format[i])
 	{
 		if (format[i] == '%')
 		{
-			/*start va list*/
-			va_start(args, format);
-			/*return variadic arguments*/
-			switch (format[i + 1])
+			va_start(args, format); /*start va list*/
+			switch (format[i + 1]) /*return variadic arguments*/
 			{
 				case 'c':
 					count += _putchar(va_arg(args, int));
