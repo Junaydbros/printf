@@ -16,11 +16,11 @@ int _printf(const char *format, ...)
 
 	if (format == NULL)
 		return (-1);
+	va_start(args, format); /*start va list*/
 	while (format && format[i])
 	{
 		if (format[i] == '%')
 		{
-			va_start(args, format); /*start va list*/
 			switch (format[i + 1]) /*return variadic arguments*/
 			{
 				case 'c':
