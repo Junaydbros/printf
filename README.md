@@ -48,5 +48,9 @@ The following format specifiers are supported.
 
 ## License
 
+<<<<<<< HEAD
 ```Implemented and Submitted by```
+=======
+## Implemeted and Submitted by
+>>>>>>> bf9b6d607a34e09e73045c4bd56a856b9300cf69
 ```Franklin OBIUKWU``` and ```Abdulhamid SANUSI```
