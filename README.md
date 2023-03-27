@@ -48,5 +48,5 @@ The following format specifiers are supported.
 
 ## License
 
-```Implemeted and Submitted by```
+```Implemented and Submitted by```
 ```Franklin OBIUKWU``` and ```Abdulhamid SANUSI```
