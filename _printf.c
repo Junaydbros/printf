@@ -48,6 +48,5 @@ int _printf(const char *format, ...)
 		}
 	}
 	va_end(args);/*end va_list*/
-	_putchar('\0'); /*print null character*/
 	return (count);
 }
