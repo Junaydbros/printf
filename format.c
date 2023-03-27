@@ -35,6 +35,8 @@ int _printf(const char *format, ...)
 					count += _putchar('%');
 					i += 2;
 					break;
+				case '\0':
+					return (-1);
 				default:
 					count += _putchar(format[i]);
 					i += 1;
@@ -42,12 +44,10 @@ int _printf(const char *format, ...)
 			}
 			continue;
 		}
-		/*print value if its not a format specifier*/
-		count += _putchar(format[i]);
+		count += _putchar(format[i]); /*print value if its not a format specifier*/
 		i++;
 	}
-	va_end(args);
-	/*print null character*/
-	_putchar('\0');
+	va_end(args);/*end va_list*/
+	_putchar('\0'); /*print null character*/
 	return (count);
 }
