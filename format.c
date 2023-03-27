@@ -35,8 +35,6 @@ int _printf(const char *format, ...)
 					count += _putchar('%');
 					i += 2;
 					break;
-				case '\0':
-					return (-1);
 				default:
 					count += _putchar(format[i]);
 					i += 1;
@@ -48,7 +46,6 @@ int _printf(const char *format, ...)
 		count += _putchar(format[i]);
 		i++;
 	}
-	/*end va_list*/
 	va_end(args);
 	/*print null character*/
 	_putchar('\0');
