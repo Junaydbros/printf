@@ -14,8 +14,7 @@ int _printf(const char *format, ...)
 	char *str;
 	va_list args;/*declare list*/
 
-	if (format == NULL)
-		return (-1);
+	format == NULL ? return (-1) : i = i;
 	va_start(args, format); /*start va list*/
 	while (format && format[i])
 	{
@@ -30,8 +29,7 @@ int _printf(const char *format, ...)
 				case 's':
 					i += 2;
 					str = va_arg(args, char *);
-					if (str == NULL)
-						break;
+					str == NULL ? break : i = i;
 					count += _puts(str);
 					break;
 				case '%':
@@ -46,8 +44,7 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			if (format[i] != '\0')
-				count += _putchar(format[i]); /*print value if its not a format specifier*/
+			format[i] != '\0' ? count += _putchar(format[i]) : i = i;
 			i++;
 		}
 	}
