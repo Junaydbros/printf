@@ -24,7 +24,7 @@ int _printf(const char *format, ...)
 			switch (format[i + 1]) /*return variadic arguments*/
 			{
 				case 'c':
-					count += _putchar(va_arg(args, int));
+					count += (char)_putchar(va_arg(args, int));
 					i += 2;
 					break;
 				case 's':
@@ -35,6 +35,8 @@ int _printf(const char *format, ...)
 					count += _putchar('%');
 					i += 2;
 					break;
+				case '\0':
+					return (-1);
 				default:
 					count += _putchar(format[i]);
 					i += 1;
