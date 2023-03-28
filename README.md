@@ -48,6 +48,5 @@ The following format specifiers are supported.
 
 ## License
 
-## Implemented and Submitted by
-
+## Implemeted and Submitted by
 ```Franklin OBIUKWU``` and ```Abdulhamid SANUSI```
