@@ -35,6 +35,14 @@ int handle_format_string(const char *format, va_list args)
 					count += _putchar('%');
 					i += 2;
 					break;
+				case 'd':
+					count += _decimal(va_arg(args, int));
+					i += 2;
+					break;
+				case 'i':
+					count += _decimal(va_arg(args, int));
+					i += 2;
+					break;
 				case '\0':
 					return (-1);
 				default:
