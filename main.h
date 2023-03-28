@@ -8,5 +8,6 @@
 int _putchar(char c);
 int _puts(char *s);
 int _printf(const char *format, ...);
+int _decimal(int integer);
 int handle_format_string(const char *format, va_list arg);
 #endif

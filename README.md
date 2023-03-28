@@ -20,7 +20,7 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *c
 ```
 
 ## Usage
-To use the `_printf()` function in your code, include the `main.h` header file in your source document and call the function with the desired format string and any arguemtsto be printed. For example:
+To use the `_printf()` function in your code, include the `main.h` header file in your source document and call the function with the desired format string and any arguemts to be printed. For example:
 
 ```
 #include <stdio.h>
