@@ -11,10 +11,12 @@ int main(void)
 {
 	int len;
 	int len2;
+	unsigned int ui;
 	char *str = "The \"overall options\" allow. For example, the -c option says not to run the linker.\n\nOther options of processing. Some compiler\n\nMost of the C programs; when language (usually C ++ ), the explicitly. If the,languages.\n\nThe. Many have multi-letter names;single-be grouped: -d from -d -v.\n\nYou can kind; for example, if you specify -L more. Also,of the -l.\n\nMany with -f or with -W---for example, -fmove-loop-invariants, -Wformat and so on. Most have.\n";
 
 	len = _printf("Let's try to printf a simple sentence.\n");
 	len2 = printf("Let's try to printf a simple sentence.\n");
+	ui = (unsigned int)INT_MAX + 1024;
 
 	len += _printf("\n");
 	len2 += printf("\n");
@@ -79,6 +81,15 @@ int main(void)
 	/*case 15*/
 	len += _printf("%c%cth %s%s a%cg%s: Y%sou %s no%ching%s Snow.%c", 'W', 'i', "some ", "more", 'r', "s", "", "know", 't', ", Jon", '\n');
 	len2 += printf("%c%cth %s%s a%cg%s: Y%sou %s no%ching%s Snow.%c", 'W', 'i', "some ", "more", 'r', "s", "", "know", 't', ", Jon", '\n');
+	/*case uoxX*/
+	len += _printf("Unsigned octal:[%o]\n", ui);
+	len2 += printf("Unsigned octal:[%o]\n", ui);
+
+	 len += _printf("Unsigned:[%u]\n", ui);
+    	len2 += printf("Unsigned:[%u]\n", ui);
+
+	len += _printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
+    	len2 += printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
 
 	len += _printf("Character:[%c]\n", 'H');
 	len2 += printf("Character:[%c]\n", 'H');
