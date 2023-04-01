@@ -15,7 +15,7 @@ int _decimal(int integer)
 	if (integer < 0)
 	{
 		cnt += _putchar('-');
-		integer = integer * -1;
+		num = integer * -1;
 	} /* this takes care of negative decimal integers */
 	else
 		num = integer;
