@@ -4,7 +4,7 @@
  * _decimal - a function that prints a decimal integer to the standard output
  * @integer: the decimal integer
  *
- * Return: void
+ * Return: integer, count of printed value
  */
 
 int _decimal(int integer)
